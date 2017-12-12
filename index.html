@@ -1,60 +1,94 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   <title>Bootstrap</title>
 </head>
-<body>
-  <img src="http://fakeimg.pl/150/" alt="fakeimage">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <button type="button">Oui</button>
-  <button type="button">Non</button>
-  <h1>Lorem Ipsum</h1>
-  <p>Aenean eget lorem ac mi tristique volutpat. 
-  Nam elit massa, finibus vitae gravida at, lobortis eget tellus.</p>
-  <a href="#">Super</a>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
-  <img src="http://fakeimg.pl/300/" alt="fakeimg">
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-    Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, 
-    rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id 
-    lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas eu 
-    orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. 
-    Nam elit massa, finibus vitae gravida at, lobortis eget tellus. 
-  </p>
+
+<body class="row">
+  <!-- Pour séparer l'aside du reste -->
+
+  <!--ASIDE-->
+  <div class="bg-dark col-3">
+    <!-- L'aside prends 3/12 de la page web-->
+    <aside class="p-2">
+      <div class="text-center">
+        <img src="http://fakeimg.pl/150/" alt="fakeimage" class="rounded-circle mb-5">
+      </div>
+      <p class="text-white">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas
+        eu orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+      </p>
+      <button type="button" class="btn btn-success m-5">Oui</button>
+      <button type="button" class="btn btn-danger m-5">Non</button>
+    </aside>
+  </div>
+
+
+
+  <div class="col-9">
+    <!--Le header et les sections prennent 9/12 de la page web -->
+    <!--HEADER-->
+    <header>
+      <div class="col-lg-6 col-md-6 col-12">
+        <!--Col 12 = résolution téléphone, col-lg-6 résolution ordinateur col-md-6 résolution tablette-->
+        <h1> Lorem Ipsum </h1>
+        <p> Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus. </p>
+        <button type="button" class="btn btn-primary m-2">super</button>
+      </div>
+    </header>
+
+    <!--SECTION 1-->
+
+    <section class="row bg-light">
+      <div class="col-lg-6 col-md-6 col-12 ">
+        <div class="text-center">
+          <!--J'ai créé cette div avec la classe text-center pour centrer l'image-->
+          <img src="http://fakeimg.pl/300/" alt="fakeimg">
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas
+          eu orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+        </p>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-12 ">
+        <div class="text-center">
+          <img src="http://fakeimg.pl/300/" alt="fakeimg" class="mr-5">
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas
+          eu orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+        </p>
+      </div>
+    </section>
+
+    <!--SECTION 2-->
+
+    <section class="row  bg-light">
+      <div class="col-lg-6 col-md-6 col-12">
+        <div class="text-center">
+          <img src="http://fakeimg.pl/300/" alt="fakeimg">
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas
+          eu orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+        </p>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-12">
+        <div class="text-center">
+          <img src="http://fakeimg.pl/300/" alt="fakeimg">
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id elementum risus, nec suscipit lectus. Aliquam metus lacus, rhoncus sit amet magna nec, dignissim euismod orci. Suspendisse id lacus rhoncus, dapibus mauris et, ornare erat. Phasellus egestas
+          eu orci sit amet pulvinar. Aenean eget lorem ac mi tristique volutpat. Nam elit massa, finibus vitae gravida at, lobortis eget tellus.
+        </p>
+      </div>
+    </section>
+  </div>
 </body>
+
 </html>
